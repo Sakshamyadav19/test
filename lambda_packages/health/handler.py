@@ -1,7 +1,6 @@
 """Health check handler."""
 
 import json
-from src.utils.auth import lambda_response
 
 
 def lambda_handler(event, context):
@@ -11,7 +10,13 @@ def lambda_handler(event, context):
     Returns:
         API Gateway response with 200 status
     """
-    return lambda_response(200, {
-        "status": "healthy",
-        "service": "odessey-backend"
-    })
+    return {
+        "statusCode": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "body": json.dumps({
+            "status": "healthy",
+            "service": "odessey-backend"
+        })
+    }
