@@ -1,0 +1,5 @@
+# ETA Lambda - INRIX API dependencies
+boto3>=1.26.0
+pydantic>=2.0.0
+requests>=2.28.0
+pytz>=2022.7

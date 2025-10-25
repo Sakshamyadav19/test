@@ -1,0 +1,5 @@
+# Auth Lambda - authentication dependencies
+boto3>=1.26.0
+pydantic>=2.0.0
+python-jose[cryptography]>=3.3.0
+bcrypt>=4.0.0

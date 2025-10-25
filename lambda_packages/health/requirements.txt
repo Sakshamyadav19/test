@@ -1,0 +1,2 @@
+# Health Lambda - minimal dependencies
+# No external dependencies needed for health check

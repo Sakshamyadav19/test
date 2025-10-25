@@ -1,0 +1,3 @@
+# Get Trip Lambda - retrieval dependencies
+boto3>=1.26.0
+pydantic>=2.0.0
